@@ -1,0 +1,11 @@
+version: '2'
+services:
+    mariadb:
+      image: mariadb:10.5.3-bionic
+      restart: always
+      environment:
+        - MYSQL_ROOT_PASSWORD=mysql
+        - MYSQL_USER=mysql
+        - MYSQL_PASSWORD=mysql
+      ports:
+        - '3306:3306'
